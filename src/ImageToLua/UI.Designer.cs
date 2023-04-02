@@ -173,11 +173,11 @@ namespace ImageToLua
             // Credits
             // 
             this.Credits.AutoSize = true;
-            this.Credits.Location = new System.Drawing.Point(268, 316);
+            this.Credits.Location = new System.Drawing.Point(259, 316);
             this.Credits.Name = "Credits";
-            this.Credits.Size = new System.Drawing.Size(98, 15);
+            this.Credits.Size = new System.Drawing.Size(118, 15);
             this.Credits.TabIndex = 17;
-            this.Credits.Text = "created by hovac";
+            this.Credits.Text = "github.com/mov-ebx";
             this.Credits.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Draggable);
             // 
             // Top
@@ -300,7 +300,7 @@ namespace ImageToLua
             this.maxWidthAdjuster.Size = new System.Drawing.Size(97, 21);
             this.maxWidthAdjuster.TabIndex = 24;
             this.maxWidthAdjuster.Value = new decimal(new int[] {
-            40,
+            250,
             0,
             0,
             0});
@@ -358,7 +358,7 @@ namespace ImageToLua
             this.maxHeightAdjuster.Size = new System.Drawing.Size(97, 21);
             this.maxHeightAdjuster.TabIndex = 27;
             this.maxHeightAdjuster.Value = new decimal(new int[] {
-            40,
+            250,
             0,
             0,
             0});
