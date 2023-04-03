@@ -146,7 +146,7 @@ namespace ImageToLua
             // 
             // ofd
             // 
-            this.ofd.Filter = "Image file (*.png)|*.png";
+            this.ofd.Filter = "Image file|*.png;*.bmp;*.jpeg;*.jpg;*.hdp;*.wdp;*.tiff;*.ico";
             // 
             // Copy
             // 
@@ -173,7 +173,7 @@ namespace ImageToLua
             // Credits
             // 
             this.Credits.AutoSize = true;
-            this.Credits.Location = new System.Drawing.Point(259, 316);
+            this.Credits.Location = new System.Drawing.Point(258, 316);
             this.Credits.Name = "Credits";
             this.Credits.Size = new System.Drawing.Size(118, 15);
             this.Credits.TabIndex = 17;
@@ -249,7 +249,7 @@ namespace ImageToLua
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(119, 15);
             this.Title.TabIndex = 0;
-            this.Title.Text = "Image2Lua - v1.0.0b";
+            this.Title.Text = "Image2Lua - v1.0.1b";
             this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Title.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Draggable);
             // 

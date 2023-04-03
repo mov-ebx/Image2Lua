@@ -8,6 +8,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -151,13 +152,19 @@ namespace ImageToLua
             ofd.InitialDirectory = Application.StartupPath;
             if (ofd.ShowDialog() == DialogResult.OK && !string.IsNullOrEmpty(ofd.FileName))
             {
+                ScriptBox.Text = "-- Processing image...\n-- Please be patient.";
                 String script = "local colors = {";
                 Bitmap bitmap = ResizeBitmap(new Bitmap(ofd.FileName));
+
+                int i = 0;
                 for (int y = 0; y < bitmap.Height; y++)
                 {
                     for (int x = 0; x < bitmap.Width; x++)
                     {
                         Color color = bitmap.GetPixel(x, y);
+                        ScriptBox.Text = $"-- Processing image...\n-- Please be patient.\n\n-- {i}/{bitmap.Height*bitmap.Width} complete";
+                        ScriptBox.Refresh();
+                        i++;
                         script += $"Color3.fromRGB({color.R},{color.G},{color.B}),";
                     }
                 }
