@@ -249,7 +249,7 @@ namespace ImageToLua
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(119, 15);
             this.Title.TabIndex = 0;
-            this.Title.Text = "Image2Lua - v1.0.1b";
+            this.Title.Text = "Image2Lua - v1.0.2b";
             this.Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Title.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Draggable);
             // 
